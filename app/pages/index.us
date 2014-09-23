@@ -4,8 +4,13 @@
     <title><%= pkg.name %></title>
 
     <link rel="stylesheet" type="text/css" href="<%= css %>" media="all" />
+    <script src="/js/modernizr.custom.10733.js" type="text/javascript" charset="utf-8" async defer></script>
+    
   </head>
   <body>
+    <div id="app">
+    </div>
+
     <script type="text/javascript" src="<%= js %>"></script>
   </body>
 </html>
