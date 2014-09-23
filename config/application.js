@@ -36,7 +36,19 @@ module.exports = function(lineman) {
     // have Ruby installed as well as the `sass` gem. To enable it, comment out the
     // following line:
     //
-    enableSass: true
+    enableSass: true,
+
+    sass: {
+        compile: {
+            options: {
+              loadPath: [
+              "app/css",
+              "vendor/css",
+              "vendor/bower/foundation/scss"
+              ]
+          }
+      }
+  }
 
     // Asset Fingerprints
     //
